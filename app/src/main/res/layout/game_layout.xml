@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgr"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:textDirection="ltr">
+
+    <TextView
+        android:id="@+id/text_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Your score: "
+        android:textColor="@color/text"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/text_score"
+        android:layout_below="@+id/text_score"
+        android:layout_marginLeft="10dp"
+        android:text="Time: "
+        android:textColor="@color/text"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/text_time"
+        android:layout_toLeftOf="@id/text_time"
+        android:src="@drawable/ic_timer_cyan_a700_24dp" />
+
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_score"
+        android:layout_marginRight="30dp"
+        android:text="0"
+        android:textColor="@color/text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_score"
+        android:layout_below="@id/text_score"
+        android:layout_marginBottom="20dp"
+        android:text="0"
+        android:textColor="@color/text"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layoutDirection="ltr">
+
+        <TextView
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/numberColor"
+            android:textSize="@dimen/num" />
+
+        <TextView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/num1"
+            android:layout_toRightOf="@+id/num1"
+            android:text=" + "
+            android:textColor="@color/numberColor"
+            android:textSize="@dimen/num" />
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/plus"
+            android:text="0"
+            android:textColor="@color/numberColor"
+            android:textSize="@dimen/num" />
+
+        <TextView
+            android:id="@+id/out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/num2"
+            android:text=" = "
+            android:textColor="@color/numberColor"
+            android:textSize="@dimen/num" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/out"
+            android:text="0"
+            android:textColor="@color/numberColor"
+            android:textSize="@dimen/num" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:layoutDirection="ltr">
+
+        <ImageView
+            android:id="@+id/btn_true"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_true"
+            android:layout_marginRight="100dp"/>
+
+        <ImageView
+            android:layout_toRightOf="@+id/btn_true"
+            android:id="@+id/btn_false"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_false" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
